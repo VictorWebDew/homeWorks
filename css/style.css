@@ -1,0 +1,150 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    z-index: -1;
+    background-color: rgba(99, 100, 103, 0.84);
+
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #f5eeee;
+    text-align: center;
+    background-color: rgba(35, 28, 28, 0.42);
+    padding: 10px 20px;
+    border: 1px solid rgb(44, 42, 42);
+    cursor: pointer;
+}
+
+h1, h2, p, ul > li {
+    text-align: center;
+}
+
+h1 {
+    margin: 10px 0px;
+    background-color: darkgray;
+    color: rgba(3, 3, 3, 0.59);
+    text-align: center;
+    transition: 0.5s ease all;
+}
+
+h1:hover {
+    background-color: rgba(3, 3, 3, 0.50);
+    color: darkgray;
+}
+
+h1:hover > span {
+    color: darkgoldenrod;
+}
+
+
+h2:hover {
+    background-color: rgba(3, 3, 3, 0.50);
+    color: darkgray;
+    background: linear-gradient(-30deg, gray, black);
+}
+
+h2:hover > span:nth-child(even) {
+    color: dodgerblue;
+}
+
+h2:hover > span:nth-child(odd) {
+    color: darkgoldenrod;
+}
+
+p {
+    border: 3px solid rgba(47, 50, 51, 0.75);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: darkgray;
+    background-color: rgba(47, 50, 51, 0.75);
+    word-break: break-word;
+    overflow: auto;
+    /*transition: 0.5s ease all;*/
+}
+
+p:hover {
+    border: 3px solid rgb(134, 129, 129);
+    background: linear-gradient(to right, black, dimgray);
+
+}
+
+img {
+    width: auto;
+    max-height: 43%;
+    border: 3px solid #42222e;
+    /*margin: 0 0 10px;*/
+    position: relative;
+    left: 40%;
+    /*margin: 0 auto;*/
+    border-radius: 50%;
+    filter: hue-rotate(0deg);
+    cursor: pointer;
+    transition: 1s ease-in-out all;
+}
+
+img:hover {
+    transform: rotateY(180deg);
+    filter: drop-shadow(0 0 0.75rem crimson);
+    filter: hue-rotate(-20deg);
+}
+
+ol, ul {
+    list-style-type: none;
+    padding: 0px;
+    display: block;
+}
+
+ul > li > a:last-child {
+    border: 2px solid rgb(44, 42, 42);
+}
+
+ul.menu > li > a:hover {
+    background-color: rgba(3, 3, 3, 0.59);
+}
+
+li.list {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+ul.subMenu {
+    position: absolute;
+    top: -999em;
+    opacity: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    transition: 0.3s ease opasity;
+}
+
+li.list:hover {
+    display: block;
+}
+
+.list:hover ul.subMenu {
+    position: relative;
+    top: 0em;
+    opacity: 1;
+}
+
+ul.subMenu > li > a {
+    border: 3px solid rgb(44, 42, 42);
+    border-bottom: 0px;
+    font: 14px/1.2em sans-serif;
+}
+
+.list:hover ul.subMenu li a {
+    padding: 10px 0 10px 20px;
+}
+
+ul.subMenu > li a:hover {
+    background-color: rgba(110, 102, 102, 0.85);
+    color: black;
+}
