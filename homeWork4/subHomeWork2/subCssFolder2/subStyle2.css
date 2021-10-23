@@ -1,0 +1,84 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-flow: column nowrap;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.wrapper div {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 100%;
+}
+
+.wrapper div a {
+    align-self: center;
+}
+
+#header, #footer {
+    background-color: #ecec9f;
+    max-height: 15vh;
+    margin: 10px 0;
+}
+
+#header, #footer, #menu, .post {
+    border: 1px solid black;
+}
+
+div.subBox {
+    display: flex;
+    flex-flow: nowrap;
+    height: 70vh;
+}
+
+.subSubBox1 {
+    margin: 0;
+    padding: 0;
+    min-width: 40%;
+}
+
+#menu {
+    flex: 2 1;
+    /*min-width: 70%;*/
+    background-color: #f182c0;
+}
+
+.subSubBox2 {
+    display: flex;
+    flex: 2 1;
+    min-width: 60%;
+    flex-flow: wrap;
+}
+
+.post {
+    flex: 1 1 auto;
+    background-color: rgba(114, 162, 204, 0.84);
+    margin: 0 0 0 10px;
+}
+
+.post:last-child {
+    margin-top: 10px;
+}

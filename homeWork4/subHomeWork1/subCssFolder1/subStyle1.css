@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.wrapper > div {
+    display: flex;
+    margin: 10px 0 10px 10px;
+    flex: 1 1 auto;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.wrapper > div:first-child {
+    width: 100%;
+}
+
+.wrapper > div:last-child {
+    margin-right: 10px;
+}
+
+.wrapper > div:first-child {
+    background-color: gray;
+    flex-direction: row;
+}
+
+.wrapper > div:nth-child(2) {
+    background-color: darkred;
+}
+
+.wrapper > div:last-child {
+    background-color: mediumslateblue;
+}
