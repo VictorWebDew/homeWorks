@@ -9,6 +9,7 @@
 
 header {
     background-color: lightskyblue;
+    margin-bottom: 10px;
 }
 
 header, footer, .hero, .sidebar, .main__content, .extra__content, .related__images, .related__photos
@@ -26,46 +27,57 @@ main {
     display: flex;
     flex: 9 1;
     height: 100%;
+    flex-flow: row nowrap;
+}
+
+.subMain1, .subMain2 {
+    display: flex;
+    height: 100%;
     flex-flow: column wrap;
-    /*padding: 10px 0;*/
-    margin: 10px 0 0 0;
-    box-sizing: border-box;
+    row-gap: 10px;
+}
+
+.subMain1 {
+    flex-flow: column nowrap;
+    flex: 1 1 30%;
 }
 
 main .hero {
     display: flex;
-    flex: 1 1 auto;
-    width: 40%;
-    height: 40%;
+    height: 35%;
     background-color: rgba(159, 159, 199, 0.89);
-
     box-sizing: border-box;
 }
 
 main .sidebar {
     display: flex;
-    flex: 1 1;
-    width: 40%;
-    height: 60%;
-    margin: 10px 10px 0 0;
+    height: 75%;
+    /*flex: 1 1;*/
+    /*width: 40%;*/
+    /*height: 60%;*/
+    /*margin: 10px 10px 0 0;*/
     background-color: #5aa25a;
 }
 
-main .main__content {
+.subMain2 {
+    flex-flow: column nowrap;
+    flex: 4 1 70%;
+    margin: 0 0 0 10px;
+}
+
+main .subMain2 .main__content {
     display: flex;
-    flex: 1 1 auto;
-    width: 60%;
-    height: 55%;
+    height: 100%;
+
+
     background-color: gold;
 }
 
-main .extra__content {
+main .subMain2 .extra__content {
     display: flex;
-    flex: 1 1;
-    width: 60%;
-    height: 45%;
+    height: 100%;
     background-color: dimgray;
-    margin-top: 10px;
+
 }
 
 .images {
