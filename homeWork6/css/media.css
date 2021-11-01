@@ -1,0 +1,166 @@
+@media screen and (min-width: 768px) {
+    .burger__button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .social, .logo {
+        display: none;
+    }
+
+    .header__nav {
+        position: fixed;
+        top: -999em;
+        /*visibility: hidden;*/
+        transition: 0.5s ease visibility;
+
+    }
+
+    /*................ burger menu ..................*/
+
+    .burger__button {
+        position: fixed;
+        top: 10px;
+        left: 45vw;
+        display: block;
+        width: 55px;
+        height: 55px;
+        border: 1px solid #0D2B3E;
+        background-color: rgba(22, 62, 91, 0.66);
+        border-radius: 50%;
+    }
+
+    .burger__button > span {
+        position: absolute;
+        top: 50%;
+        left: -3px;
+        width: 40px;
+        height: 4px;
+        background-color: #3AC6E9;
+        border-radius: 10%;
+    }
+
+    .burger__button::before, .burger__button::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 17px;
+        left: 8px;
+        width: 40px;
+        height: 4px;
+        background-color: #3AC6E9;
+        border-radius: 10%;
+        transition: 0.2s all;
+    }
+
+    .burger__button::before {
+        top: 38px;
+    }
+
+    .burger__button:hover {
+        border-color: rgba(80, 156, 227, 0.84);
+        background-color: darkslateblue;
+    }
+
+    .burger__button:hover span {
+        height: 0;
+    }
+
+    .burger__button:hover::before {
+        top: 24px;
+        transform: rotate(45deg);
+        background-color: deepskyblue;
+    }
+
+    .burger__button:hover::after {
+        top: 25px;
+        transform: rotate(-45deg);
+        background-color: deepskyblue;
+    }
+
+    /*................  burger menu ..................// */
+    .burger__button:hover .header__nav {
+        position: fixed;
+        top: 400px;
+    }
+
+    /*................ responsive text ..................*/
+
+    .header__content_title > p {
+        width: 24%;
+    }
+
+    .header__content_description p, .main__content3 > p, .second__line_text, .main__content4_left > p, .main__content4_right > p {
+        font-size: calc(14px + (2 + 2 * 0.7) * ((100vw - 320px) / 1280));
+    }
+
+    .header__content_title > p {
+        font-size: calc(16px + (5 + 5 * 0.7) * ((100vw - 320px) / 1280));
+    }
+
+    .main__title {
+        font-size: calc(16px + (5 + 5 * 0.7) * ((100vw - 320px) / 1280));
+    }
+
+    .main__content_boxes > p {
+        font-size: calc(12px + (2 + 2 * 0.7) * ((100vw - 320px) / 1280));
+    }
+
+    /*................ responsive text //................*/
+
+
+    .main__content4_left h5, .main__content4_right h5 {
+        font-weight: 500;
+    }
+
+    .main__content, .main__content2, .main__content3, .main__content4 {
+        width: 100%;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .main__content2 {
+        row-gap: 10px;
+        column-gap: 10px;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+
+    .main__content_box3 {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .burger__button {
+        left: 43vw;
+    }
+
+    .header__content_title {
+        flex-flow: column wrap;
+    }
+
+    main {
+        padding: 0 0 10px;
+    }
+
+    .main__content_box2 {
+        width: 90%;
+    }
+
+    .main__content_box3 {
+        width: 100%;
+    }
+
+    .main__content4_right, .main__content4_left {
+        width: 100%;
+    }
+
+    .header__content_title > p {
+        width: 40%;
+    }
+}
+
+
