@@ -245,7 +245,9 @@ span {
     justify-content: space-between;
     /*border-radius: 10px;*/
     background-color: #CED8E1;
+    column-gap: 10px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .main__content3 > p {
@@ -266,6 +268,7 @@ span {
     box-sizing: border-box;
     border: 1px solid deepskyblue;
     border-radius: 10px;
+    text-align: center;
 }
 
 .imgRectangle {
@@ -277,12 +280,14 @@ span {
     margin: 0 0 15px;
 }
 
+.main__content_box3 > a {
+    text-align: center;
+}
+
 .first__line_text {
     display: flex;
     width: 100%;
-    padding: 0 35px;
-    box-sizing: border-box;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .first__line_text > a {

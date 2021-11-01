@@ -133,6 +133,24 @@
 
 }
 
+@media screen and (max-width: 575px) {
+    .main__content {
+        width: 100%;
+        flex-flow: column wrap;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .main__content_box2 {
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .main__content_boxes {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 360px) {
     .burger__button {
         left: 43vw;
@@ -161,6 +179,13 @@
     .header__content_title > p {
         width: 40%;
     }
+
+    /*.main__content {*/
+    /*    width: 100%;*/
+    /*    flex-flow: column wrap;*/
+    /*    align-items: center;*/
+    /*    margin: 0 auto;*/
+    /*}*/
 }
 
 
