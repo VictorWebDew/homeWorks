@@ -79,18 +79,20 @@ background: url("../img/HERO IMG.png") center/cover no-repeat;
 }
 
 .header__title h2 {
-    font-size: 50px;
+    font-size: calc(20px + 24 * (100vw / 1200));
+    /*font-size: 50px;*/
     line-height: 57px;
     margin-left: 24px;
 }
 
 .header__title h1 {
-    font-size: 80px;
+    font-size: calc(18px + 42 * (100vw / 1200));
     line-height: 92px;
 }
 
 .header__title p {
-    font-size: 18px;
+    font-size: calc(16px + 2 * (100vw / 1200));
+    /*font-size: 18px;*/
     line-height: 25px;
     color: #FFFFFF;
     display: flex;
@@ -184,9 +186,8 @@ background: url("../img/HERO IMG.png") center/cover no-repeat;
 
 .header__Sub_Box span {
     font-size: calc(12px + 14 * (100vw / 1200));
-    /*font-size: 26px;*/
     line-height: 30px;
     font-weight: normal;
-    font-family: Tinos;
+    font-family: 'Tinos', serif;
     color: #BC9060;
 }
